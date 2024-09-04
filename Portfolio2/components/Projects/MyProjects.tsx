@@ -7,47 +7,50 @@ import { useInView } from "react-intersection-observer";
 
 export const projectsData = [
   {
-    title: "Dev-Union",
+    title: "Gitcode",
     description:
-      "Dev Union is a full-stack app enabling users to create chat rooms and collaborate on projects with real-time video calls and screen-sharing.",
-    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma"],
-    githubLink: "https://github.com/MayankUghade/Code-Together",
-    liveLink: "https://dev-union.vercel.app/",
-    imageUrl: "/dev-union.png",
+      "Experience the future of open-source contributions. Explore my projects and skills, all built on a transparent and rewarding platform.",
+    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma","Typescript","MetaMask","Aptos BlockChain", "Chainlink","Move"],
+    githubLink: "https://github.com/Meet2054/Gitcode-v3/tree/main",
+    liveLink: "https://gitcode-v3-eight.vercel.app/",
+    imageUrl: "/gitcode.png",
   },
   {
-    title: "NewsNugget",
+    title: "ONWE",
     description:
-      "NewsNugget, powered by HuggingFace AI, condenses Times of India articles into 60-word summaries for quick and easy updates.",
+      "Onwe is a social media platform that connects people with similar interests, allowing them to share their thoughts & ideas in compuses.",
     tags: [
       "React",
       "Next.js",
       "PostgreSQL",
       "Tailwind",
       "Prisma",
-      "HuggingFace AI",
+      "Clerk Auth",
+      "Typescript",
+      "Ngrok",
+      "Cloudinary",
     ],
     githubLink: "https://github.com/MayankUghade/NewsNugget",
     liveLink: "https://news-nugget.vercel.app/",
-    imageUrl: "/news-nugget.png",
+    imageUrl: "/onwe.png",
   },
   {
-    title: "InsightFul",
+    title: "HiLink",
     description:
-      "InsightFul is a fullstack tool that helps saas developers collect valuable user feedback and insights to improve your product and delight your customers. This tool makes sure you can collect feedback at one place.",
-    tags: ["React", "Next.js", "Tailwind", "Next-Auth", "MongoDB", "vercel"],
-    githubLink: "https://github.com/MayankUghade/InsightFul",
-    liveLink: "https://insightful-two.vercel.app/",
+      "Hilink is a user-friendly web app that simplifies travel planning, offering personalized recommendations and seamless booking for your next adventure.",
+    tags: ["React", "Next.js", "Tailwind", "vercel"],
+    githubLink: "https://github.com/Meet2054/Travel-WebSite",
+    liveLink: "https://travel-web-site-mu.vercel.app/",
     imageUrl: "/insightful.png",
   },
   {
-    title: "Epic-Energize",
+    title: "Automa8X",
     description:
-      "Epic-Energize is a fitness app with a comprehensive exercise database and rapidAPI integration, providing structured workouts",
-    tags: ["React", "Tailwind", "RapidAPI"],
-    githubLink: "https://github.com/MayankUghade/Epic-Energize",
-    liveLink: "https://epic-energize.vercel.app/",
-    imageUrl: "/epic-energize.png",
+      "AutoMa8X is a decentralized automation tool built on Aptos, enhancing business processes with scalable, secure, and efficient blockchain technology.",
+    tags: ["Next.js", "Tailwind", "Typescript", "Aptos BlockChain","Move","Prisma","PostgreSQL"],
+    githubLink: "https://github.com/Meet2054/automa8x-production",
+    liveLink:"https://automa8x.vercel.app/",
+    imageUrl: "/auto.png",
   },
 ] as const;
 
