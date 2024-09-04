@@ -1,0 +1,22 @@
+{
+  "node": {
+    "a51516c67c04668d6de888208b8357413f2229be": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmeetstwt%2FDesktop%2FWork%2FPortfolio_2%2FPortfolio2%2Fcomponents%2FContactMe%2Factions.ts%22%2C%5B%22sendEmail%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    },
+    "bef98a245ddaffeb059f5e4c17ccb4b8b680dd3c": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmeetstwt%2FDesktop%2FWork%2FPortfolio_2%2FPortfolio2%2Fcomponents%2FContactMe%2Factions.ts%22%2C%5B%22sendEmail%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "ex8N+GJSY/3Sj894mNLpAzbDWIXCq3jBdW8uODh91i4="
+}
