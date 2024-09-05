@@ -8,21 +8,21 @@ import { useInView } from "react-intersection-observer";
 const experiencesData = [
   {
     title: "Computer-Science Degree",
-    location: "Pune, India",
-    organization: "Pune University",
+    location: "Vadodara, India",
+    organization: "Parul University",
     description:
       "I am nearing the completion of my computer engineering degree, currently in the final year. ",
     icon: <FaGraduationCap className="w-[40px] h-[40px]" />,
     date: "2021- present",
   },
   {
-    title: "Front-End Developer Intern",
-    location: "Mumbai, India",
-    organization: "Prodigy Infotech",
+    title: "CTO and Backend Developer",
+    location: "Remote",
+    organization: "Self-Employed",
     description:
-      "During my internship as a Front-end Developer at a Mumbai-based company, I had the opportunity to apply the React skills I acquired from YouTube tutorials in real-world projects. I actively contributed to the creation of their main webpage, gaining valuable hands-on experience in web development.",
+      "As the CTO and backend developer of Onwe, I lead the development of a campus-centric social media platform, overseeing the technical architecture and API creation to connect students and enhance campus engagement.",
     icon: <IoCodeWorking className="w-[40px] h-[40px]" />,
-    date: "May 2023 - July 2023",
+    date: "June 2024 - present",
   },
   {
     title: "Freelance Front-End Developer",

@@ -33,15 +33,6 @@ const projectsData = [
     imageUrl: "/onwe.png",
   },
   {
-    title: "HiLink",
-    description:
-      "Hilink is a user-friendly web app that simplifies travel planning, offering personalized recommendations and seamless booking for your next adventure.",
-    tags: ["React", "Next.js", "Tailwind", "vercel"],
-    githubLink: "https://github.com/Meet2054/Travel-WebSite",
-    liveLink: "https://travel-web-site-mu.vercel.app/",
-    imageUrl: "/insightful.png",
-  },
-  {
     title: "Automa8X",
     description:
       "AutoMa8X is a decentralized automation tool built on Aptos, enhancing business processes with scalable, secure, and efficient blockchain technology.",
@@ -51,38 +42,46 @@ const projectsData = [
     imageUrl: "/auto.png",
   },
   {
-    title: "Aniwave",
+    title: "Aether",
     description:
-      "An easy-to-use anime app built with Next.js, fetching data from the Jikan API to provide up-to-date information on your favorite shows and characters.",
-    tags: ["React", "Next-Js", "Tailwind", "JikanAPI", "ShadCn-UI"],
-    githubLink: "https://github.com/MayankUghade/Aniwave",
+    "AetherWallet enables seedless, gasless web3 onboarding with a multi-chain smart wallet and on-chain domain, simplifying account management across chains.",
+    tags: ["React", "Next-Js", "Tailwind", "ShadCn-UI"],
+    githubLink: "https://github.com/Meet2054/Web3Pay",
     liveLink: "https://aniwave.vercel.app/",
-    imageUrl: "/aniwave.png",
+    imageUrl: "/aether.png",
   },
   {
-    title: "Permitech Landing page",
+    title: "Convoia",
+    description:
+    "Convoia is a decentralized Web3 chat platform leveraging XMTP for an interoperable inbox, enabling seamless NFT discovery and cross-app messaging for collectors and Web3 enthusiasts.",
+    tags: ["React", "Next-Js", "Python", "XMTP", "Tailwind"],
+    githubLink: "https://github.com/Meet2054/Convoia",
+    liveLink: "https://convoia.vercel.app/",
+    imageUrl: "/convoia.png",
+  },
+  {
+    title: "Guard Anon",
     description:
       "A sleek and engaging freelance landing page featuring cool animations to captivate visitors and showcase your portfolio effectively.",
     tags: [
-      "React",
-      "Next-Js",
+      "ReactNative",
       "Tailwind",
-      "Aceternity-UI",
-      "ShadCn-UI",
-      "Magic-UI",
+      "Figma",
+      "GPT API",
+      "Supabase",
     ],
-    githubLink: "https://github.com/MayankUghade/permitech",
+    githubLink: "https://github.com/gmpaliwal07/Guard_Anon",
     liveLink: "https://permitech.vercel.app/",
-    imageUrl: "/permitech.png",
+    imageUrl: "/guardanon.png",
   },
   {
-    title: "WorkFlow",
+    title: "HiLink",
     description:
-      "Workflow is a powerful task management application that helps you and your team stay organized and productive.This application contains drag and drop feature that allows user to change the status of the project as well. ",
-    tags: ["React", "Next-Js", "Kinde Auth", "postgre sql", "Prisma"],
-    githubLink: "https://github.com/MayankUghade/work-flow",
-    liveLink: "https://workflow-2.vercel.app/",
-    imageUrl: "/workflow.png",
+      "Hilink is a user-friendly web app that simplifies travel planning, offering personalized recommendations and seamless booking for your next adventure.",
+    tags: ["React", "Next.js", "Tailwind", "vercel"],
+    githubLink: "https://github.com/Meet2054/Travel-WebSite",
+    liveLink: "https://travel-web-site-mu.vercel.app/",
+    imageUrl: "/insightful.png",
   },
 ];
 export default function page() {
