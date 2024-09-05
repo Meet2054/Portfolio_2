@@ -10,6 +10,7 @@ import {
   SiExpress,
   SiFramer,
   SiMongodb,
+  
   SiPrisma,
   SiTailwindcss,
   SiNextdotjs,
@@ -19,6 +20,7 @@ import {
   SiFigma,
 } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
+
 import { motion } from "framer-motion";
 
 const skills = [
@@ -88,23 +90,18 @@ const skills = [
   },
   {
     name: "AdobePS",
-    icon: <SiAdobephotoshop className="text-4xl" />,
-  },
-  {
+    icon: <  SiAdobephotoshop    className="text-4xl" />,
+  },{
     name: "Linux",
     icon: <SiLinux className="text-4xl" />,
-  },
-  {
+  },{
     name: "Figma",
     icon: <SiFigma className="text-4xl" />,
   },
-  {
-    name: "C++",
-    icon: <TbBrandCpp className="text-4xl" />,
-  },
+  
 ];
 
-export default function Page() {
+export default function page() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -113,27 +110,31 @@ export default function Page() {
       className="mt-10 lg:container w-full p-2"
     >
       <h1 className="font-bold text-3xl mb-2 ml-3">Who am I</h1>
-      <div className="border-t p-3 flex md:flex-row flex-col gap-10 items-center">
+      <div className=" border-t p-3 flex md:flex-row flex-col gap-10 items-center">
         <div>
           <p className="mt-5">
             I'm a 20-year-old full-stack developer who loves building web
             applications. I started coding when I was 17 and have been hooked
-            ever since. I use Next.js, TypeScript, Prisma, Node.js, and other
-            technologies to create strong and scalable projects. I love solving
-            problems and making exciting applications.
+            ever since. I use Next.js, TypeScript, Prisma, Node.js and other
+            technologies to create strong and scalable projects. I love is
+            solving problems and making exciting applications.
           </p>
           <p className="mt-5 mb-10">
-            Beyond coding, I love hiking, swimming, and playing badminton. My
+            Beyond coding, I love hiking, swimming, and playing Batminton. My
             enthusiasm for both programming and outdoor activities drives me to
             balance my time between tech projects and exploring nature.
           </p>
 
-          <h1 className="font-bold text-3xl mb-2">My Tech Stack</h1>
-          <div className="border-t">
+          <h1 className="font-bold text-3xl mb-2">My Tech stack</h1>
+          <div className="border-t ">
             <div className="flex md:gap-4 flex-wrap p-2 mt-5">
-              {skills?.filter(skill => skill.name && skill.icon).map((skill, index) => (
-                <div key={skill.name || index} className="flex items-center gap-3 p-2 md:p-1">
+              {skills?.filter(skill => skill !== undefined).map((skill) => (
+                <div
+                  key={skill.name}
+                  className="flex items-center gap-3 p-2 md:p-1"
+                >
                   {skill.icon}
+                  <p>{skill.name}</p>
                 </div>
               ))}
             </div>
@@ -149,14 +150,14 @@ export default function Page() {
         />
       </div>
 
-      <h1 className="font-bold text-3xl mb-2 mt-8 ml-2">About this website</h1>
+      <h1 className="font-bold text-3xl mb-2 mt-8 ml-2 ">About this website</h1>
       <div className="border-t p-3">
-        <h1 className="p-2">Next.js</h1>
+        <h1 className="p-2">Next js</h1>
         <h1 className="p-2">Typescript</h1>
-        <h1 className="p-2">Deployed on Vercel</h1>
+        <h1 className="p-2">Deployed on vercel</h1>
         <h1 className="p-2">Shadcn</h1>
         <h1 className="p-2">Aceternity UI</h1>
-        <h1 className="p-2">Tailwind CSS</h1>
+        <h1 className="p-2">Tailwind Css</h1>
       </div>
     </motion.div>
   );

@@ -16,102 +16,43 @@ import {
   SiAdobephotoshop,
   SiLinux,
   SiFigma,
-
 } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 
+// Define the skill objects, ensuring all have names and icons
 const skills = [
-  {
-    name: "HTML",
-    icon: <IoLogoHtml5 className="text-4xl" />,
-  },
-  {
-    name: "CSS",
-    icon: <IoLogoCss3 className="text-4xl" />,
-  },
-  {
-    name: "Javascript",
-    icon: <IoLogoJavascript className="text-4xl" />,
-  },
-  {
-    name: "Typescript",
-    icon: <BiLogoTypescript className="text-4xl" />,
-  },
-  {
-    name: "ReactJS",
-    icon: <FaReact className="text-4xl" />,
-  },
-  {
-    name: "NextJS",
-    icon: <SiNextdotjs className="text-4xl" />,
-  },
-  {
-    name: "NodeJS",
-    icon: <IoLogoNodejs className="text-4xl" />,
-  },
-  {
-    name: "ExpressJS",
-    icon: <SiExpress className="text-4xl" />,
-  },
-  {
-    name: "Git",
-    icon: <FaGitAlt className="text-4xl" />,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss className="text-4xl" />,
-  },
-  {
-    name: "Prisma",
-    icon: <SiPrisma className="text-4xl" />,
-  },
-  {
-    name: "MongoDB",
-    icon: <SiMongodb className="text-4xl" />,
-  },
-  {
-    name: "PostgreSQL",
-    icon: <BiLogoPostgresql className="text-4xl" />,
-  },
-  {
-    name: "Python",
-    icon: <IoLogoPython className="text-4xl" />,
-  },
-  {
-    name: "Framer Motion",
-    icon: <SiFramer className="text-4xl" />,
-  },
-  {
-    name: "Docker",
-    icon: <SiDocker className="text-4xl" />,
-  },
-  {
-    name: "AdobePS",
-    icon: <  SiAdobephotoshop    className="text-4xl" />,
-  },{
-    name: "Linux",
-    icon: <SiLinux className="text-4xl" />,
-  },{
-    name: "Figma",
-    icon: <SiFigma className="text-4xl" />,
-  },
-  ,{
-    name: "",
-    icon: <TbBrandCpp className="text-4xl" />,
-  },
+  { name: "HTML", icon: <IoLogoHtml5 className="text-4xl" /> },
+  { name: "CSS", icon: <IoLogoCss3 className="text-4xl" /> },
+  { name: "Javascript", icon: <IoLogoJavascript className="text-4xl" /> },
+  { name: "Typescript", icon: <BiLogoTypescript className="text-4xl" /> },
+  { name: "ReactJS", icon: <FaReact className="text-4xl" /> },
+  { name: "NextJS", icon: <SiNextdotjs className="text-4xl" /> },
+  { name: "NodeJS", icon: <IoLogoNodejs className="text-4xl" /> },
+  { name: "ExpressJS", icon: <SiExpress className="text-4xl" /> },
+  { name: "Git", icon: <FaGitAlt className="text-4xl" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-4xl" /> },
+  { name: "Prisma", icon: <SiPrisma className="text-4xl" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-4xl" /> },
+  { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-4xl" /> },
+  { name: "Python", icon: <IoLogoPython className="text-4xl" /> },
+  { name: "Framer Motion", icon: <SiFramer className="text-4xl" /> },
+  { name: "Docker", icon: <SiDocker className="text-4xl" /> },
+  { name: "AdobePS", icon: <SiAdobephotoshop className="text-4xl" /> },
+  { name: "Linux", icon: <SiLinux className="text-4xl" /> },
+  { name: "Figma", icon: <SiFigma className="text-4xl" /> },
+  { name: "C++", icon: <TbBrandCpp className="text-4xl" /> },
 ];
 
+// Split the skills into two rows
 const firstRow = skills.slice(0, skills.length / 2);
 const secondRow = skills.slice(skills.length / 2);
 
-const ReviewCard = ({ icon, name }: { icon: any; name: string }) => {
+const ReviewCard = ({ icon, name }: { icon: JSX.Element; name: string }) => {
   return (
     <figure
       className={cn(
         "relative w-30 cursor-pointer overflow-hidden rounded-xl",
-        // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >

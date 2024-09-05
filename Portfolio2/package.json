@@ -35,6 +35,7 @@
     "react-toastify": "^10.0.5",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^3.5.0",
+    "sharp": "^0.33.5",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
