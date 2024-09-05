@@ -131,7 +131,7 @@ export default function page() {
           <h1 className="font-bold text-3xl mb-2">My Tech stack</h1>
           <div className="border-t ">
             <div className="flex md:gap-4 flex-wrap p-2 mt-5">
-              {skills.map((skill) => (
+            {skills?.filter(skill => skill !== undefined).map((skill) => (
                 <div
                   key={skill.name}
                   className="flex items-center gap-3 p-2 md:p-1"
