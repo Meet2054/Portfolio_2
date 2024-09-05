@@ -131,15 +131,13 @@ export default function page() {
           <h1 className="font-bold text-3xl mb-2">My Tech stack</h1>
           <div className="border-t ">
             <div className="flex md:gap-4 flex-wrap p-2 mt-5">
-            {skills?.filter(skill => skill !== undefined).map((skill) => (
-                <div
-                  key={skill.name}
-                  className="flex items-center gap-3 p-2 md:p-1"
-                >
+            {skills?.filter(skill => skill !== undefined).map((skill, index) => (
+              skill && ( // Check if skill is not undefined
+                <div key={skill.name || index} className="flex items-center gap-3 p-2 md:p-1">
                   {skill.icon}
-                  <p>{skill.name}</p>
                 </div>
-              ))}
+              )
+            ))}
             </div>
           </div>
         </div>
