@@ -99,7 +99,7 @@ const skills = [
     icon: <SiFigma className="text-4xl" />,
   },
   ,{
-    name: "",
+    name: ".",
     icon: <TbBrandCpp className="text-4xl" />,
   },
 ];
