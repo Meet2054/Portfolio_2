@@ -31,7 +31,7 @@ export const projectsData = [
       "Cloudinary",
     ],
     githubLink: "https://github.com/MayankUghade/NewsNugget",
-    liveLink: "https://news-nugget.vercel.app/",
+    liveLink: "",
     imageUrl: "/onwe.png",
   },
   {

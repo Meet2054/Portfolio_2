@@ -29,7 +29,7 @@ const projectsData = [
       "Cloudinary",
     ],
     githubLink: "https://github.com/MayankUghade/NewsNugget",
-    liveLink: "https://news-nugget.vercel.app/",
+    liveLink: "",
     imageUrl: "/onwe.png",
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     "AetherWallet enables seedless, gasless web3 onboarding with a multi-chain smart wallet and on-chain domain, simplifying account management across chains.",
     tags: ["React", "Next-Js", "Tailwind", "ShadCn-UI"],
     githubLink: "https://github.com/Meet2054/Web3Pay",
-    liveLink: "https://aniwave.vercel.app/",
+    liveLink: "",
     imageUrl: "/aether.png",
   },
   {
@@ -71,7 +71,7 @@ const projectsData = [
       "Supabase",
     ],
     githubLink: "https://github.com/gmpaliwal07/Guard_Anon",
-    liveLink: "https://permitech.vercel.app/",
+    liveLink: "",
     imageUrl: "/guardanon.png",
   },
   {
