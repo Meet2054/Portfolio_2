@@ -67,7 +67,7 @@ const bentoItems: BentoItem[] = [
             <h1 className="text-sm">LinkedIn</h1>
           </Link>
           <Link
-            href="https://x.com/meetstwt16"
+            href="https://x.com/mikeystwt"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"

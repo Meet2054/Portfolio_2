@@ -1,19 +1,17 @@
 "use client";
 import { IoCodeWorking, IoLaptopOutline } from "react-icons/io5";
-import { TracingBeam } from "../ui/tracing-beam";
 import { FaGraduationCap } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const experiencesData = [
   {
-    title: "Computer-Science Degree",
-    location: "Vadodara, India",
-    organization: "Parul University",
+    title: "Developer Relations Manager",
+    organization: "0xGasless",
+    location: "Remote, Bangalore",
+    url: "https://0xgasless.com",
     description:
-      "I am nearing the completion of my computer engineering degree, currently in the final year. ",
-    icon: <FaGraduationCap className="w-[40px] h-[40px]" />,
-    date: "2021- present",
+      "Served as a Developer Relations professional, fostering engagement between 0xGasless and the developer community. Organized webinars and workshops, increasing active developer participation by 30%. Developed comprehensive documentation and tutorials, reducing support queries by 25%. Established feedback loops with developers, leading to the implementation of 15 new features.",
   },
   {
     title: "CTO and Backend Developer",
@@ -33,13 +31,23 @@ const experiencesData = [
     icon: <IoLaptopOutline className="w-[40px] h-[40px]" />,
     date: "Ongoing",
   },
-] as const;
+  {
+    title: "Computer-Science Degree",
+    location: "Vadodara, India",
+    organization: "Parul University",
+    description:
+      "I am nearing the completion of my computer engineering degree, currently in the final year.",
+    icon: <FaGraduationCap className="w-[40px] h-[40px]" />,
+    date: "2021 - present",
+  },
+];
 
 export default function Experience() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
   return (
     <motion.div
       ref={ref}
@@ -49,44 +57,35 @@ export default function Experience() {
       className="mt-[200px] flex items-center flex-col justify-center scroll-mt-28"
       id="experience"
     >
-      <h1 className="font-bold text-3xl">My experience</h1>
+      <h1 className="font-bold text-3xl">My Experience</h1>
       <div>
-        <TracingBeam className="sm:flex hidden">
-          <section className="w-full flex flex-col gap-10 items-center justify-center scroll-mt-28 py-[120px]">
-            <div className="flex flex-col gap-10 max-w-[900px]">
-              {experiencesData.map((items, index) => (
-                <div key={index}>
-                  <div className=" p-5 w-full border rounded-lg">
-                    <h1 className="font-semibold text-2xl capitalize">
-                      {items.title}
-                    </h1>
-                    <p className="font-normal mt-2">{items.location}</p>
-                    <p className="font-normal mt-1">{items.organization}</p>
-                    <p className="mt-4 font-normal text-gray-700 dark:text-white/75">
-                      {items.description}
-                    </p>
-                    <p className="font-normal mt-5">{items.date}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        </TracingBeam>
-
-        <section className="w-full flex sm:hidden flex-col gap-10 items-center justify-center scroll-mt-28 py-[30px] ">
+        <section className="w-full flex flex-col gap-10 items-center justify-center scroll-mt-28 py-[120px]">
           <div className="flex flex-col gap-10 max-w-[900px]">
-            {experiencesData.map((items, index) => (
+            {experiencesData.map((item, index) => (
               <div key={index}>
-                <div className=" p-5 w-full border rounded-lg">
+                <div className="p-5 w-full border rounded-lg">
                   <h1 className="font-semibold text-2xl capitalize">
-                    {items.title}
+                    {item.title}
                   </h1>
-                  <p className="font-normal mt-2">{items.location}</p>
-                  <p className="font-normal mt-1">{items.organization}</p>
-                  <p className="mt-4 font-normal text-gray-700 dark:text-white/75">
-                    {items.description}
+                  <p className="font-normal mt-2">{item.location}</p>
+                  <p className="font-normal mt-1">
+                    {item.url ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                      >
+                        {item.organization}
+                      </a>
+                    ) : (
+                      item.organization
+                    )}
                   </p>
-                  <p className="font-normal mt-5">{items.date}</p>
+                  <p className="mt-4 font-normal text-gray-700 dark:text-white/75">
+                    {item.description}
+                  </p>
+                  <p className="font-normal mt-5">{item.date}</p>
                 </div>
               </div>
             ))}
