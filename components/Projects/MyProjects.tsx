@@ -7,12 +7,21 @@ import { useInView } from "react-intersection-observer";
 
 export const projectsData = [
   {
+    title: "EngxLab Agency",
+    description:
+      "Experience the future of open-source contributions. Explore my projects and skills, all built on a transparent and rewarding platform.",
+      tags: ["React", "Next.js", "Tailwind","Typescript"],
+    githubLink: "https://github.com/EngXLab/EngxLab",
+    liveLink: "https://engx-lab.vercel.app/",
+    imageUrl: "/Engxlab.png",
+  },
+  {
     title: "Gitcode",
     description:
       "Experience the future of open-source contributions. Explore my projects and skills, all built on a transparent and rewarding platform.",
-    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma","Typescript","MetaMask","Aptos BlockChain", "Chainlink","Move"],
+      tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma","Typescript","MetaMask","Aptos BlockChain", "Chainlink","Move"],
     githubLink: "https://github.com/Meet2054/Gitcode-v3/tree/main",
-    liveLink: "https://gitcode-v3-eight.vercel.app/",
+    liveLink: "https://www.thegitcode.com/",
     imageUrl: "/gitcode.png",
   },
   
@@ -36,6 +45,24 @@ export const projectsData = [
     imageUrl: "/onwe.png",
   },
   {
+    title: "Automa8X",
+    description:
+    "AutoMa8X is a decentralized automation tool built on Aptos, enhancing business processes with scalable, secure, and efficient blockchain technology.",
+    tags: ["Next.js", "Tailwind", "Typescript", "Aptos BlockChain","Move","Prisma","PostgreSQL"],
+    githubLink: "https://github.com/Meet2054/automa8x-production",
+    liveLink:"https://automa8x.vercel.app/",
+    imageUrl: "/auto.png",
+  },
+  {
+    title: "World of Vibes",
+    description:
+      "Experience the future of open-source contributions. Explore my projects and skills, all built on a transparent and rewarding platform.",
+    tags: ["WordPress"],
+    githubLink: "https://github.com/Meet2054",
+    liveLink: "https://worldofvibes.com/",
+    imageUrl: "/WOV.png",
+  }, 
+  {
     title: "HiLink",
     description:
       "Hilink is a user-friendly web app that simplifies travel planning, offering personalized recommendations and seamless booking for your next adventure.",
@@ -43,15 +70,6 @@ export const projectsData = [
     githubLink: "https://github.com/Meet2054/Travel-WebSite",
     liveLink: "https://travel-web-site-mu.vercel.app/",
     imageUrl: "/insightful.png",
-  },
-  {
-    title: "Automa8X",
-    description:
-      "AutoMa8X is a decentralized automation tool built on Aptos, enhancing business processes with scalable, secure, and efficient blockchain technology.",
-    tags: ["Next.js", "Tailwind", "Typescript", "Aptos BlockChain","Move","Prisma","PostgreSQL"],
-    githubLink: "https://github.com/Meet2054/automa8x-production",
-    liveLink:"https://automa8x.vercel.app/",
-    imageUrl: "/auto.png",
   },
 ] as const;
 
