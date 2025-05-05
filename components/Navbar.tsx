@@ -61,7 +61,7 @@ export default function Navbar() {
             <FaLinkedin className="text-2xl" />
           </Link>
           <Link
-            href="https://x.com/meetstwt16"
+            href="https://x.com/mikeystwt"
             target="_blank"
             rel="noopener noreferrer"
           >
